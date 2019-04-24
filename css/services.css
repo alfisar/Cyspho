@@ -1,0 +1,68 @@
+html,body{
+    color: rgba(0,0,0,.8);
+}
+
+ul > li > a{
+    color:  rgba(0,0,0,.8);   
+}
+
+ul > li > a:hover{
+    color:  rgba(0,0,0,.8);
+    border-bottom: 3px solid #2242EB;
+}
+
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
+
+
+.hide{
+    display: none;
+}
+
+.service-card{
+position: relative;
+color:  rgba(0,0,0,.6);
+width: auto;
+height: 14em;
+background: #FFFFFF;
+box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+font-weight: 500;
+}
+
+.service-focus, .service-card:hover{
+    color:  white;
+    background: #2242EB;
+    box-shadow: 0px 8px 15px rgba(5, 44, 248, 0.5);
+}
+
+
+.service-card > p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 1em;
+}
+
+.numbering{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.numbering > span{
+    font-size: 1.3em;
+    margin: 0 .5em 0 0 ;
+}
+
+.barrier{
+    text-align: center;
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    width: 100%;
+    height: 1px;
+}
+
+
+#cancelOrder, #placeOrder{
+    padding: .5em 2em .5em 2em;
+}

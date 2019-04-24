@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/services.css">
+
+    <title>Services</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="row">
+        <nav class="navbar fixed-top navbar-light">
+            <a href="#" class=" ml-5 navbar-brand on-light">
+                Sudatama
+            </a>
+            <ul class="nav justify-content-end mr-5">
+                <li class="nav-item">
+                    <a href="" class="nav-link on-light">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link on-light">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link on-light">History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link on-light">Account</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Body Content -->
+    <div class="mt-3 invisible">space from top</div>
+    <div class="container-fluid mt-5">
+        <h1 class="text-center">Services</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-xl-3">
+                <p class="numbering"><span>1</span>Select a Service</p>
+            </div>
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-3"></div>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-xl-3 text-center">
+                <div class="service-card service-focus text-center">
+                    <p>Engineering Services</p>
+                </div>
+            </div>
+            <div class="col-xl-3 text-center">
+                <div class="service-card">
+                    <p>Maintenance Services</p>
+                </div>
+            </div>
+            <div class="col-xl-3 text-center">
+                <div class="service-card">
+                    <p>Unique Product</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Selector of product -->
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-9">
+                <div class="barrier mt-5"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-xl-3 mt-3">
+                <p class="numbering"><span>2</span>Select a Product</p>
+            </div>
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-3"></div>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-xl-4 text-center">
+                <select id="selectEngineering" class="custom-select custom-select-lg mb-3">
+                    <option selected>Tower</option>
+                    <option value="Tower">Tower</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-xl-2 text-center">
+            </div>
+            <div class="col-xl-3 text-center">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-3">
+                <p class="numbering"><span>3</span>Product Information</p>
+            </div>
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-3"></div>
+        </div>
+        <div id="enTower">
+            <div class="row justify-content-center ">
+                <div class="col-xl-4">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <h5>Tower Size</h5>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">Small</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Medium</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio3">Large</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <h5>Quantity</h5>
+                            <div class="col-xl-12 m-0 p-0">
+                                <h4 class="text-center mt-4">0</h4>
+                                <input type="range" class="custom-range" min="1" max="9" id="customRange2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <h5>Location</h5>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-3">
+                <p class="numbering"><span>4</span>Customer Information</p>
+            </div>
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-3"></div>
+        </div>
+        <div id="custInfo">
+            <div class="row justify-content-center ">
+                <div class="col-xl-4 mb-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Example label</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Example input">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Another label</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2"
+                                placeholder="Another input">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Example label</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Example input">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Another label</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2"
+                                placeholder="Another input">
+                        </div>
+                        <div class="form-row mt-5 justify-content-end">
+                            <div class="col text-right">
+                                    <button id="cancelOrder">Cancel Order</button>
+                            </div>
+                            <div class="col text-right">
+                                    <button id="placeOrder">Place Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-5 mb-5 mt-5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

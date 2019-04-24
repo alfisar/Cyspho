@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #counter {
+            height: 3em;
+            width: 3em;
+            background-color: pink;
+            position: fixed;
+            top: 30%;
+            right: 5%;
+        }
+
+        #numbs {
+            position: relative;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="sect0">Scroll - Event - Javascript</h1>
+    <div id="counter">
+        <h4 id="numbs">00</h4>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+
+    <h1>Section 1</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p id="sect1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque
+        repellat deserunt, quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores
+        temporibus eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae
+        repudiandae, autem deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni
+        quaerat deleniti placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi
+        officiis quia totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident
+        rem veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam
+        quia aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro,
+        laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque
+        deleniti aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum
+        dolores ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum
+        excepturi vitae maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum
+        natus similique fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit
+        quisquam, veniam similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil
+        quia enim fuga? Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+
+    <h1>section 2</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+    <p id="sect2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore blanditiis doloremque repellat deserunt,
+        quod ut amet nihil cumque fugit perspiciatis odit a rem labore obcaecati, esse asperiores temporibus eum. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Molestias error dolorum obcaecati, quae repudiandae, autem
+        deleniti provident eveniet maiores reprehenderit eligendi, nesciunt ipsum a. Sint sequi magni quaerat deleniti
+        placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatem! Quasi officiis quia
+        totam ea nemo veritatis eveniet natus cupiditate ullam eos. Pariatur obcaecati id vero a provident rem
+        veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quam ullam culpa obcaecati veniam quia
+        aspernatur ab. Suscipit laboriosam libero at velit provident saepe distinctio eius sequi illo. Porro, laborum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dignissimos dolorem tempore maxime neque deleniti
+        aperiam? Voluptates tenetur impedit aliquam, sed laudantium quos corporis ut odio assumenda rerum dolores ipsum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sit id voluptatibus dolorum excepturi vitae
+        maiores nulla placeat provident vero molestias consequatur at, facilis explicabo ipsa nostrum natus similique
+        fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti, impedit quisquam, veniam
+        similique reiciendis, tempore excepturi facilis exercitationem cupiditate laudantium a nihil quia enim fuga?
+        Architecto aperiam placeat provident.</p>
+
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            // console.log('Scrolled!');
+            const scrolled = window.scrollY;
+            console.log(scrolled);
+
+        })
+        // console.log(window.innerHeight);
+
+        $(window).scroll(function () {
+            if (checkVisible($('#sect0')) && checkVisible($('#para3'))) {
+                // $('#numbs').text("00").fadeIn().stop();
+                $('#numbs').fadeOut(300, () => {
+                    $('#numbs').text("00").fadeIn(300);
+                });
+                // $('#numbs').fadeOut(300).$('#numbs').text("00").fadeIn(300);
+
+            } 
+            if (checkVisible($('#sect1'))) {
+                $('#numbs').fadeIn().text("01");
+            }
+            if (checkVisible($('#sect2'))) {
+                $('#numbs').fadeIn().text("02");
+            } 
+        });
+
+        function checkVisible(elm,eval){
+            eval = eval || "visible";
+            var vpH = $(window).height();
+            st = $(window).scrollTop(); console.log(st);
+            y = $(elm).offset().top;
+            elemHeight = $(elm).height();
+
+            if (eval == "visible") {
+                return ((y<(vpH + st)) && (y > (st - elemHeight)));
+            }
+            if(eval == "above"){
+                return ((y<(vpH + st)) && (y > (st - elemHeight)));
+            }
+        }
+
+
+        // alert(window.innerHeight);
+    </script>
+</body>
+
+</html>
