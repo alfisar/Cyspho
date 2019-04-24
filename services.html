@@ -112,7 +112,7 @@
         </div>
 
         <!-- Tower Selected -->
-        <div id="enTower" class=" row justify-content-center hide">
+        <div id="enTower" class=" row justify-content-center">
             <div class=" col-xl-4">
                 <div class="row">
                     <div class="col-xl-5">
@@ -149,7 +149,7 @@
                         <h5>Quantity</h5>
                         <div class="col-xl-12 m-0 p-0">
                             <h4 id="towerQuantity" class="text-center mt-4">1</h4>
-                            <input type="range" class="custom-range" min="1" max="9" id="towerQty">
+                            <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
                         </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
         </div>
 
         <!-- Co-Location Selected -->
-        <div id="enColocation" class="row justify-content-center">
+        <div id="enColocation" class="row justify-content-center hide">
             <div class="col-xl-6">
                 <div class="row">
                     <div class="col-xl-4">
@@ -219,6 +219,96 @@
             <div class="col-xl-3">
             </div>
         </div>
+
+        <!-- Shelter Selected -->
+        <div id="enShelter" class=" row justify-content-center hide">
+                <div class=" col-xl-4">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <!-- Radio button tower size -->
+                            <h5>Shelter Capacity</h5>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerSmall" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerSmall">Small</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerMedium" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerMedium">Medium</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerLarge" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerLarge">Large</label>
+                            </div>
+
+                            <!-- Datepicker -->
+                            <h5 class="mt-4">Start Date</h5>
+                            <input id="datepickerShel" width="271" />
+                        </div>
+                        <!-- Quantity -->
+                        <div class="col-xl-5">
+                            <h5>Quantity</h5>
+                            <div class="col-xl-12 m-0 p-0">
+                                <h4 id="towerQuantity" class="text-center mt-4">1</h4>
+                                <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <h5>Location</h5>
+                            <textarea class="form-control" id="locItem" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+         <!--Lab Selected -->
+        <div id="enLab" class="row justify-content-center hide">
+                <div class="col-xl-6">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <h5>Lab Capacity</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="tenPpl" name="capLab" class="custom-control-input">
+                                <label class="custom-control-label" for="tenPpl">10 - 20 People</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="thirtyPpl" name="capLab" class="custom-control-input">
+                                <label class="custom-control-label" for="thirtyPpl">30 - 40 People</label>
+                            </div>
+                            <div class="custom-control custom-radio mt-2">
+                                <input type="radio" id="fiftyPpl" name="capLab" class="custom-control-input">
+                                <label class="custom-control-label" for="fiftyPpl">50 - 70 People</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <h5>Facilites Tier</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="tier1" name="tierLab" class="custom-control-input">
+                                <label class="custom-control-label" for="tier1">Tier 1</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="tier2" name="tierLab" class="custom-control-input">
+                                <label class="custom-control-label" for="tier2">Tier 2</label>
+                            </div>
+                            <div class="custom-control custom-radio mt-2">
+                                <input type="radio" id="tier3" name="tierLab" class="custom-control-input">
+                                <label class="custom-control-label" for="tier3">Tier 3</label>
+                            </div>
+                        </div>
+                        <!-- Datepicker -->
+                        <div class="col-xl-12 mt-4">
+                            <h5 class="mt-2">Start Date</h5>
+                            <input id="datepickerLab" width="271" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                </div>
+            </div>
+
     </div>
 
     <div class="container-fluid mt-5">
@@ -284,6 +374,14 @@
         });
 
         $('#datepickerCol').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+
+        $('#datepickerShel').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+
+        $('#datepickerLab').datepicker({
             uiLibrary: 'bootstrap4'
         });
     </script>
