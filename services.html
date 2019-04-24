@@ -53,24 +53,23 @@
         </div>
         <div class="row justify-content-center ">
             <div class="col-xl-3 text-center">
-                <div class="service-card service-focus text-center">
+                <div id="serviceEng" class="service-card text-center">
                     <p>Engineering Services</p>
                 </div>
             </div>
             <div class="col-xl-3 text-center">
-                <div class="service-card">
+                <div id="serviceMain" class="service-card">
                     <p>Maintenance Services</p>
                 </div>
             </div>
             <div class="col-xl-3 text-center">
-                <div class="service-card">
+                <div id="serviceUnique" class="service-card">
                     <p>Unique Product</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Selector of product -->
     <div class="container-fluid mt-5">
         <div class="row justify-content-center">
             <div class="col-xl-9">
@@ -79,12 +78,54 @@
         </div>
         <div class="row justify-content-center mt-5">
             <div class="col-xl-3 mt-3">
-                <p class="numbering"><span>2</span>Select a Product</p>
+                <p class="numbering"><span>2</span>Choose a Product</p>
             </div>
             <div class="col-xl-3">
             </div>
             <div class="col-xl-3"></div>
         </div>
+    </div>
+
+    <!-- Product Selection -->
+    <div id="engSelect" class="container-fluid hide">
+        <div class="row justify-content-center ">
+            <div class="col-xl-4 text-center">
+                <select id="selectEngineering" class="custom-select mb-3">
+                    <option value="Tower">Tower</option>
+                    <option value="colocation">Co-Location</option>
+                    <option value="Shelter">Shelter</option>
+                    <option value="Lab">IT Laboratorium</option>
+                </select>
+            </div>
+            <div class="col-xl-2 text-center">
+            </div>
+            <div class="col-xl-3 text-center">
+            </div>
+        </div>
+    </div>
+
+    <!-- Maintenance Selection -->
+    <div id="mainSelect" class="container-fluid hide">
+        <div class="row justify-content-center">
+            <div class="col-xl-4">
+                    <div class="custom-control custom-radio mb-1">
+                        <input type="radio" id="telcomMain" name="mainselect" class="custom-control-input">
+                        <label class="custom-control-label" for="telcomMain">Telecommunication Devices & support</label>
+                    </div>
+                    <div class="custom-control custom-radio mt-1">
+                        <input type="radio" id="buildingMain" name="mainselect" class="custom-control-input">
+                        <label class="custom-control-label" for="buildingMain">Buildings & Infrastructures</label>
+                    </div>
+            </div>
+            <div class="col-xl-2 text-center">
+            </div>
+            <div class="col-xl-3 text-center">
+            </div>
+        </div>
+    </div>
+
+    <!-- Unique Selection -->
+    <div id="uniqueSelect" class="container-fluid hide">
         <div class="row justify-content-center ">
             <div class="col-xl-4 text-center">
                 <select id="selectEngineering" class="custom-select mb-3">
@@ -111,117 +152,119 @@
             <div class="col-xl-3"></div>
         </div>
 
-        <!-- Tower Selected -->
-        <div id="enTower" class=" row justify-content-center">
-            <div class=" col-xl-4">
-                <div class="row">
-                    <div class="col-xl-5">
-                        <!-- Radio button tower size -->
-                        <h5>Tower Size</h5>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="towerSmall" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="towerSmall">Small</label>
+        <!-- Product Services -->
+        <div id="proServices" class="hide">
+            <!-- Tower Selected -->
+            <div id="enTower" class=" row justify-content-center hide">
+                <div class=" col-xl-4">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <!-- Radio button tower size -->
+                            <h5>Tower Size</h5>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerSmall" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerSmall">Small</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerMedium" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerMedium">Medium</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerLarge" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerLarge">Large</label>
+                            </div>
+                            <!-- Color select menu -->
+                            <h5 class="mt-4">Color</h5>
+                            <div class="form-group">
+                                <select id="colorTower" class="mb-3 custom-select">
+                                    <option value="red" selected>Red</option>
+                                    <option value="Tower">Grey</option>
+                                    <option value="2">Black</option>
+                                    <option value="3">Camo</option>
+                                </select>
+                            </div>
+                            <!-- Datepicker -->
+                            <h5 class="mt-2">Start Date</h5>
+                            <input id="datepicker" width="271" />
                         </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="towerMedium" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="towerMedium">Medium</label>
+                        <!-- Quantity -->
+                        <div class="col-xl-5">
+                            <h5>Quantity</h5>
+                            <div class="col-xl-12 m-0 p-0">
+                                <h4 id="towerQuantity" class="text-center mt-4">1</h4>
+                                <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                            </div>
                         </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="towerLarge" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="towerLarge">Large</label>
-                        </div>
-                        <!-- Color select menu -->
-                        <h5 class="mt-4">Color</h5>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="col-xl-12">
                         <div class="form-group">
-                            <select id="colorTower" class="mb-3 custom-select">
-                                <option value="red" selected>Red</option>
-                                <option value="Tower">Grey</option>
-                                <option value="2">Black</option>
-                                <option value="3">Camo</option>
-                            </select>
+                            <h5>Location</h5>
+                            <textarea class="form-control" id="locItem" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Co-Location Selected -->
+            <div id="enColocation" class="row justify-content-center hide">
+                <div class="col-xl-6">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <h5>Quantity</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="halfRack" name="qtyColo" class="custom-control-input">
+                                <label class="custom-control-label" for="halfRack">1/2 Rack</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="oneRack" name="qtyColo" class="custom-control-input">
+                                <label class="custom-control-label" for="oneRack">1 Rack</label>
+                            </div>
+                            <div class="custom-control custom-radio mt-2">
+                                <input type="radio" id="dozenRack" name="qtyColo" class="custom-control-input">
+                                <label class="custom-control-label" for="dozenRack">12 Rack</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <h5>Power</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="fixedPow" name="powColo" class="custom-control-input">
+                                <label class="custom-control-label" for="fixedPow">Fixed</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="kwhPow" name="powColo" class="custom-control-input">
+                                <label class="custom-control-label" for="kwhPow">kWh Accounting</label>
+                            </div>
+                            <div class="custom-control custom-radio mt-2">
+                                <input type="radio" id="flatPow" name="powColo" class="custom-control-input">
+                                <label class="custom-control-label" for="flatPow">16A Flatrate</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <h5>Bandwith</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="hundredMbit" name="bandColo" class="custom-control-input">
+                                <label class="custom-control-label" for="hundredMbit">100Mbit/s port</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="indvBw" name="bandColo" class="custom-control-input">
+                                <label class="custom-control-label" for="indvBw">Individual Bandwidth</label>
+                            </div>
                         </div>
                         <!-- Datepicker -->
-                        <h5 class="mt-2">Start Date</h5>
-                        <input id="datepicker" width="271" />
-                    </div>
-                    <!-- Quantity -->
-                    <div class="col-xl-5">
-                        <h5>Quantity</h5>
-                        <div class="col-xl-12 m-0 p-0">
-                            <h4 id="towerQuantity" class="text-center mt-4">1</h4>
-                            <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                        <div class="col-xl-4 mt-3">
+                            <h5 class="mt-2">Start Date</h5>
+                            <input id="datepickerCol" width="271" />
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-5">
-                <div class="col-xl-12">
-                    <div class="form-group">
-                        <h5>Location</h5>
-                        <textarea class="form-control" id="locItem" rows="4"></textarea>
-                    </div>
+                <div class="col-xl-3">
                 </div>
             </div>
-        </div>
 
-        <!-- Co-Location Selected -->
-        <div id="enColocation" class="row justify-content-center hide">
-            <div class="col-xl-6">
-                <div class="row">
-                    <div class="col-xl-4">
-                        <h5>Quantity</h5>
-                        <div class="custom-control custom-radio mb-2">
-                            <input type="radio" id="halfRack" name="qtyColo" class="custom-control-input">
-                            <label class="custom-control-label" for="halfRack">1/2 Rack</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="oneRack" name="qtyColo" class="custom-control-input">
-                            <label class="custom-control-label" for="oneRack">1 Rack</label>
-                        </div>
-                        <div class="custom-control custom-radio mt-2">
-                            <input type="radio" id="dozenRack" name="qtyColo" class="custom-control-input">
-                            <label class="custom-control-label" for="dozenRack">12 Rack</label>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <h5>Power</h5>
-                        <div class="custom-control custom-radio mb-2">
-                            <input type="radio" id="fixedPow" name="powColo" class="custom-control-input">
-                            <label class="custom-control-label" for="fixedPow">Fixed</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="kwhPow" name="powColo" class="custom-control-input">
-                            <label class="custom-control-label" for="kwhPow">kWh Accounting</label>
-                        </div>
-                        <div class="custom-control custom-radio mt-2">
-                            <input type="radio" id="flatPow" name="powColo" class="custom-control-input">
-                            <label class="custom-control-label" for="flatPow">16A Flatrate</label>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <h5>Bandwith</h5>
-                        <div class="custom-control custom-radio mb-2">
-                            <input type="radio" id="hundredMbit" name="bandColo" class="custom-control-input">
-                            <label class="custom-control-label" for="hundredMbit">100Mbit/s port</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="indvBw" name="bandColo" class="custom-control-input">
-                            <label class="custom-control-label" for="indvBw">Individual Bandwidth</label>
-                        </div>
-                    </div>
-                    <!-- Datepicker -->
-                    <div class="col-xl-4 mt-3">
-                        <h5 class="mt-2">Start Date</h5>
-                        <input id="datepickerCol" width="271" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3">
-            </div>
-        </div>
-
-        <!-- Shelter Selected -->
-        <div id="enShelter" class=" row justify-content-center hide">
+            <!-- Shelter Selected -->
+            <div id="enShelter" class=" row justify-content-center hide">
                 <div class=" col-xl-4">
                     <div class="row">
                         <div class="col-xl-6">
@@ -262,10 +305,10 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
 
-         <!--Lab Selected -->
-        <div id="enLab" class="row justify-content-center hide">
+            <!--Lab Selected -->
+            <div id="enLab" class="row justify-content-center hide">
                 <div class="col-xl-6">
                     <div class="row">
                         <div class="col-xl-4">
@@ -308,8 +351,213 @@
                 <div class="col-xl-3">
                 </div>
             </div>
+        </div>
+        <!-- End Product services -->
+
+        <!-- Maintenance Services -->
+        <div id="mainServices" class="hide">
+                <!-- Tower Selected -->
+                <div id="enTower" class=" row justify-content-center hide">
+                    <div class=" col-xl-4">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <!-- Radio button tower size -->
+                                <h5>Tower Size</h5>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="towerSmall" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="towerSmall">Small</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="towerMedium" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="towerMedium">Medium</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="towerLarge" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="towerLarge">Large</label>
+                                </div>
+                                <!-- Color select menu -->
+                                <h5 class="mt-4">Color</h5>
+                                <div class="form-group">
+                                    <select id="colorTower" class="mb-3 custom-select">
+                                        <option value="red" selected>Red</option>
+                                        <option value="Tower">Grey</option>
+                                        <option value="2">Black</option>
+                                        <option value="3">Camo</option>
+                                    </select>
+                                </div>
+                                <!-- Datepicker -->
+                                <h5 class="mt-2">Start Date</h5>
+                                <input id="datepicker" width="271" />
+                            </div>
+                            <!-- Quantity -->
+                            <div class="col-xl-5">
+                                <h5>Quantity</h5>
+                                <div class="col-xl-12 m-0 p-0">
+                                    <h4 id="towerQuantity" class="text-center mt-4">1</h4>
+                                    <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="col-xl-12">
+                            <div class="form-group">
+                                <h5>Location</h5>
+                                <textarea class="form-control" id="locItem" rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Co-Location Selected -->
+                <div id="enColocation" class="row justify-content-center hide">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <h5>Quantity</h5>
+                                <div class="custom-control custom-radio mb-2">
+                                    <input type="radio" id="halfRack" name="qtyColo" class="custom-control-input">
+                                    <label class="custom-control-label" for="halfRack">1/2 Rack</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="oneRack" name="qtyColo" class="custom-control-input">
+                                    <label class="custom-control-label" for="oneRack">1 Rack</label>
+                                </div>
+                                <div class="custom-control custom-radio mt-2">
+                                    <input type="radio" id="dozenRack" name="qtyColo" class="custom-control-input">
+                                    <label class="custom-control-label" for="dozenRack">12 Rack</label>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <h5>Power</h5>
+                                <div class="custom-control custom-radio mb-2">
+                                    <input type="radio" id="fixedPow" name="powColo" class="custom-control-input">
+                                    <label class="custom-control-label" for="fixedPow">Fixed</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="kwhPow" name="powColo" class="custom-control-input">
+                                    <label class="custom-control-label" for="kwhPow">kWh Accounting</label>
+                                </div>
+                                <div class="custom-control custom-radio mt-2">
+                                    <input type="radio" id="flatPow" name="powColo" class="custom-control-input">
+                                    <label class="custom-control-label" for="flatPow">16A Flatrate</label>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <h5>Bandwith</h5>
+                                <div class="custom-control custom-radio mb-2">
+                                    <input type="radio" id="hundredMbit" name="bandColo" class="custom-control-input">
+                                    <label class="custom-control-label" for="hundredMbit">100Mbit/s port</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="indvBw" name="bandColo" class="custom-control-input">
+                                    <label class="custom-control-label" for="indvBw">Individual Bandwidth</label>
+                                </div>
+                            </div>
+                            <!-- Datepicker -->
+                            <div class="col-xl-4 mt-3">
+                                <h5 class="mt-2">Start Date</h5>
+                                <input id="datepickerCol" width="271" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                    </div>
+                </div>
+    
+                <!-- Shelter Selected -->
+                <div id="enShelter" class=" row justify-content-center hide">
+                    <div class=" col-xl-4">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <!-- Radio button tower size -->
+                                <h5>Shelter Capacity</h5>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="towerSmall" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="towerSmall">Small</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="towerMedium" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="towerMedium">Medium</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="towerLarge" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="towerLarge">Large</label>
+                                </div>
+    
+                                <!-- Datepicker -->
+                                <h5 class="mt-4">Start Date</h5>
+                                <input id="datepickerShel" width="271" />
+                            </div>
+                            <!-- Quantity -->
+                            <div class="col-xl-5">
+                                <h5>Quantity</h5>
+                                <div class="col-xl-12 m-0 p-0">
+                                    <h4 id="towerQuantity" class="text-center mt-4">1</h4>
+                                    <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="col-xl-12">
+                            <div class="form-group">
+                                <h5>Location</h5>
+                                <textarea class="form-control" id="locItem" rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!--Lab Selected -->
+                <div id="enLab" class="row justify-content-center hide">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <h5>Lab Capacity</h5>
+                                <div class="custom-control custom-radio mb-2">
+                                    <input type="radio" id="tenPpl" name="capLab" class="custom-control-input">
+                                    <label class="custom-control-label" for="tenPpl">10 - 20 People</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="thirtyPpl" name="capLab" class="custom-control-input">
+                                    <label class="custom-control-label" for="thirtyPpl">30 - 40 People</label>
+                                </div>
+                                <div class="custom-control custom-radio mt-2">
+                                    <input type="radio" id="fiftyPpl" name="capLab" class="custom-control-input">
+                                    <label class="custom-control-label" for="fiftyPpl">50 - 70 People</label>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <h5>Facilites Tier</h5>
+                                <div class="custom-control custom-radio mb-2">
+                                    <input type="radio" id="tier1" name="tierLab" class="custom-control-input">
+                                    <label class="custom-control-label" for="tier1">Tier 1</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="tier2" name="tierLab" class="custom-control-input">
+                                    <label class="custom-control-label" for="tier2">Tier 2</label>
+                                </div>
+                                <div class="custom-control custom-radio mt-2">
+                                    <input type="radio" id="tier3" name="tierLab" class="custom-control-input">
+                                    <label class="custom-control-label" for="tier3">Tier 3</label>
+                                </div>
+                            </div>
+                            <!-- Datepicker -->
+                            <div class="col-xl-12 mt-4">
+                                <h5 class="mt-2">Start Date</h5>
+                                <input id="datepickerLab" width="271" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                    </div>
+                </div>
+            </div>
+            <!-- End Product services -->
+
     </div>
-    <!-- End of Product Information -->
+    
 
     <div class="container-fluid mt-5">
         <div class="row justify-content-center">
@@ -359,8 +607,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
-        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
@@ -368,6 +616,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="js/services.js"></script>
     <script>
         $('#datepicker').datepicker({
             uiLibrary: 'bootstrap4'
