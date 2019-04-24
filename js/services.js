@@ -1,13 +1,13 @@
 $(document).ready(() => {
-    // $('#serviceEng').addClass('service-focus');
-    // $('#engSelect').removeClass('hide');
-    // $('#engServices').removeClass('hide');
-    // $('#enTower').removeClass('hide');
+    $('#serviceEng').addClass('service-focus');
+    $('#engSelect').removeClass('hide');
+    $('#engServices').removeClass('hide');
+    $('#enTower').removeClass('hide');
 
-    $('#serviceMain').addClass('service-focus');
-    $('#mainSelect').removeClass('hide');
-    $('#mainServices').removeClass('hide');
-    $('#mainTelcom').removeClass('hide');
+    // $('#serviceMain').addClass('service-focus');
+    // $('#mainSelect').removeClass('hide');
+    // $('#mainServices').removeClass('hide');
+    // $('#mainTelcom').removeClass('hide');
 
     $('#serviceEng').click(() => {
         selectEng();
@@ -51,7 +51,7 @@ function chooseEng() {
     $('#engSelect').removeClass('hide');
     $('#mainSelect').addClass('hide');
     $('#uniqueSelect').addClass('hide');
-
+    
     $('#engServices').removeClass('hide');
     $('#mainTelcom').addClass('hide');
 }
