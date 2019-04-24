@@ -20,6 +20,11 @@ textarea{
     width: 100%;  /* The width is the width of the web page */
    }
 
+   .navbar{
+       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+       background-color: white;
+   }
+
 .hide{
     display: none;
 }

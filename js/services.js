@@ -4,11 +4,6 @@ $(document).ready(() => {
     $('#engServices').removeClass('hide');
     $('#enTower').removeClass('hide');
 
-    // $('#serviceMain').addClass('service-focus');
-    // $('#mainSelect').removeClass('hide');
-    // $('#mainServices').removeClass('hide');
-    // $('#mainTelcom').removeClass('hide');
-
     $('#serviceEng').click(() => {
         selectEng();
         chooseEng();
@@ -26,12 +21,17 @@ $(document).ready(() => {
 
     engProduct();
     mainProduct();
+    uniqueProduct();
 });
 
 function selectEng() {
     $('#serviceEng').addClass('service-focus');
     $('#serviceMain').removeClass('service-focus');
     $('#serviceUnique').removeClass('service-focus');
+    $('#engServices').removeClass('hide');
+
+    $('#mainServices').addClass('hide');
+    $('#uniqueServices').addClass('hide');
 }
 
 function selectMain() {
@@ -39,12 +39,20 @@ function selectMain() {
     $('#serviceMain').addClass('service-focus');
     $('#serviceUnique').removeClass('service-focus');
     $('#mainServices').removeClass('hide');
+
+    $('#engServices').addClass('hide');
+    $('#uniqueServices').addClass('hide');
+
 }
 
 function selectUnique() {
     $('#serviceEng').removeClass('service-focus');
     $('#serviceMain').removeClass('service-focus');
     $('#serviceUnique').addClass('service-focus');
+    $('#uniqueServices').removeClass('hide');
+
+    $('#engServices').addClass('hide');
+    $('#mainServices').addClass('hide');
 }
 
 function chooseEng() {
@@ -54,6 +62,7 @@ function chooseEng() {
     
     $('#engServices').removeClass('hide');
     $('#mainTelcom').addClass('hide');
+    
 }
 
 function chooseMain() {
@@ -70,6 +79,8 @@ function chooseUnique() {
     $('#engSelect').addClass('hide');
     $('#mainSelect').addClass('hide');
     $('#uniqueSelect').removeClass('hide');
+
+    $('#uniqueScada').removeClass('hide');
 }
 
 function engProduct() {
@@ -124,4 +135,17 @@ function mainProduct() {
 
 function uniqueProduct() {
 
+    $('.uniqueSel').click(function () {
+        if ($(this).is(':checked')) {
+            if ($(this).val() === "scada") {
+                $('#uniqueScada').removeClass('hide');
+                $('#uniqueGPA').addClass('hide');
+            }
+
+            if ($(this).val() === "gpa") {
+                $('#uniqueScada').addClass('hide');
+                $('#uniqueGPA').removeClass('hide');
+            }
+        }
+    });
 }
