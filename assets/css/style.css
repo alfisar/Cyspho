@@ -1,0 +1,239 @@
+/* OVERRIDE BOOTSTRAP */
+
+/* .nav-link {
+    color: white;
+} */
+
+/*  End of OVERRIDE BOOTSTRAP*/
+
+.on-light {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.on-dark {
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    position: fixed;
+    text-align: center;
+    width: 85%;
+    margin: .6em auto;
+}
+
+/* Opening */
+
+.home-service{
+    height: 100vh;
+    background-color: white;
+}
+
+.services-head {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.services-head h1 {
+    font-size: 8em;
+}
+
+.scroll-hint {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line {
+    position: absolute;
+    height: 85%;
+    width: 1em;
+    border-left: 1px solid black;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* End of Opening */
+
+/* Content */
+
+.service {
+    margin: 20% 0 0 0;
+}
+
+.service h1 {
+    font-size: 5em;
+    width: 40%;
+    font-weight: 700;
+}
+
+.service p {
+    padding: 1em 0 0 0;
+    font-size: 1em;
+    width: 36%;
+}
+
+.line-paragraph {
+    border-bottom: 1px solid white;
+    width: 15%;
+}
+
+.option {
+    position: relative;
+    top: 25%;
+}
+
+.option h6 {
+    font-size: 1.2em;
+}
+
+.option a {
+    color: white;
+    display: inline-block;
+    margin: 1em 3em 0 0;
+    width: 15.4rem;
+    word-break: break-all;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/* End of Content */
+
+.number-page {
+    position: fixed;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.number-page h5 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.number-line {
+    position: relative;
+    height: 100%;
+    width: 3em;
+    border-bottom: .15em solid white;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 0 .5em 0;
+}
+
+/* Engineering*/
+
+.engineering {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../img/co-location.jpg");
+    background-size: cover;
+    /* background-attachment: fixed;
+    background-repeat: no-repeat; */
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.engineering::before{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../assets/img/col.jpg"); */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+
+}
+
+/*Maintenance  */
+
+.maintenance {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../img/main.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.maintenance .option a {
+    width: 18rem;
+}
+
+/* Unique */
+
+.unique {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("../img/system.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.unique .option a {
+    width: 18rem;
+}
+
+/* Utilities */
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 1366px) {
+    /* OVERRIDE BOOTSTRAP */
+    .navbar-brand {
+        font-size: .9em;
+    }
+    .nav-link {
+        font-size: .9em;
+    }
+    /*  */
+    .service {
+        margin: 20% 0 0 0;
+    }
+    .service h1 {
+        font-size: 3em;
+        width: 40%;
+    }
+    .service p {
+        padding: 1em 0 0 0;
+        font-size: .7em;
+        width: 36%;
+    }
+    .number-page h5 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .number-line {
+        position: relative;
+        height: 100%;
+        width: 2em;
+        border-bottom: .15em solid white;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 0 .5em 0;
+    }
+    .option {
+        position: relative;
+        top: 20%;
+    }
+    .option h6 {
+        font-size: .9em;
+    }
+    .option a {
+        color: white;
+        display: inline-block;
+        margin: 1em 3em 0 0;
+        width: 23.5%;
+        word-break: break-all;
+        font-size: .8em;
+    }
+
+    .maintenance .option a , .unique .option a{
+        width: auto;
+    }
+
+    /* .unique .option a {
+        width: 18rem;
+    } */
+}

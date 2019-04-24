@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/services.css">
+
+    <title>Services</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="row">
+        <nav class="navbar fixed-top navbar-light">
+            <a href="#" class=" ml-5 navbar-brand on-light">
+                Sudatama
+            </a>
+            <ul class="nav justify-content-end mr-5">
+                <li class="nav-item">
+                    <a href="" class="nav-link on-light">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link on-light">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link on-light">History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link on-light">Account</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Body Content -->
+    <div class="mt-3 invisible">space from top</div>
+    <div class="container-fluid mt-5">
+        <h1 class="text-center">Services</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-xl-3">
+                <p class="numbering"><span>1</span>Select a Service</p>
+            </div>
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-3"></div>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-xl-3 text-center">
+                <div id="serviceEng" class="service-card text-center">
+                    <p>Engineering Services</p>
+                </div>
+            </div>
+            <div class="col-xl-3 text-center">
+                <div id="serviceMain" class="service-card">
+                    <p>Maintenance Services</p>
+                </div>
+            </div>
+            <div class="col-xl-3 text-center">
+                <div id="serviceUnique" class="service-card">
+                    <p>Unique Product</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-9">
+                <div class="barrier mt-5"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-xl-3 mt-3">
+                <p class="numbering"><span>2</span>Choose a Product</p>
+            </div>
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-3"></div>
+        </div>
+    </div>
+
+    <!-- Product Selection -->
+    <div id="engSelect" class="container-fluid hide">
+        <div class="row justify-content-center ">
+            <div class="col-xl-4 text-center">
+                <select id="selectEngineering" class="custom-select mb-3">
+                    <option value="tower">Tower</option>
+                    <option value="colocation">Co-Location</option>
+                    <option value="shelter">Shelter</option>
+                    <option value="lab">IT Laboratorium</option>
+                </select>
+            </div>
+            <div class="col-xl-2 text-center">
+            </div>
+            <div class="col-xl-3 text-center">
+            </div>
+        </div>
+    </div>
+
+    <!-- Maintenance Selection -->
+    <div id="mainSelect" class="container-fluid hide">
+        <div class="row justify-content-center">
+            <div class="col-xl-4">
+                <div class="custom-control custom-radio mb-2">
+                    <input type="radio" id="telcomMain" name="mainselect" class="custom-control-input mainSel"
+                        checked="checked" value="telcom">
+                    <label class="custom-control-label" for="telcomMain">Telecommunication Devices & support</label>
+                </div>
+                <div class="custom-control custom-radio mt-2">
+                    <input type="radio" id="buildingMain" name="mainselect" class="custom-control-input mainSel"
+                        value="building">
+                    <label class="custom-control-label" for="buildingMain">Buildings & Infrastructures</label>
+                </div>
+            </div>
+            <div class="col-xl-2 text-center">
+            </div>
+            <div class="col-xl-3 text-center">
+            </div>
+        </div>
+    </div>
+
+    <!-- Unique Selection -->
+    <div id="uniqueSelect" class="container-fluid hide">
+            <div class="row justify-content-center">
+                    <div class="col-xl-4">
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" id="scadaUnique" name="uniqueselect" class="custom-control-input uniqueSel"
+                                checked="checked" value="scada">
+                            <label class="custom-control-label" for="scadaUnique">Scada System</label>
+                        </div>
+                        <div class="custom-control custom-radio mt-2">
+                            <input type="radio" id="gpaUnique" name="uniqueselect" class="custom-control-input uniqueSel"
+                                value="gpa">
+                            <label class="custom-control-label" for="gpaUnique">General Purposes Agent</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 text-center">
+                    </div>
+                    <div class="col-xl-3 text-center">
+                    </div>
+                </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-3">
+                <p class="numbering"><span>3</span>Product Information</p>
+            </div>
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-3"></div>
+        </div>
+
+        <!-- Product Services -->
+        <div id="engServices" class="hide">
+            <!-- Tower Selected -->
+            <div id="enTower" class=" row justify-content-center hide">
+                <div class=" col-xl-4">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <!-- Radio button tower size -->
+                            <h5>Tower Size</h5>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerSmall" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerSmall">Small</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerMedium" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerMedium">Medium</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerLarge" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerLarge">Large</label>
+                            </div>
+                            <!-- Color select menu -->
+                            <h5 class="mt-4">Color</h5>
+                            <div class="form-group">
+                                <select id="colorTower" class="mb-3 custom-select">
+                                    <option value="red" selected>Red</option>
+                                    <option value="Tower">Grey</option>
+                                    <option value="2">Black</option>
+                                    <option value="3">Camo</option>
+                                </select>
+                            </div>
+                            <!-- Datepicker -->
+                            <h5 class="mt-2">Start Date</h5>
+                            <input id="datepicker" width="271" />
+                        </div>
+                        <!-- Quantity -->
+                        <div class="col-xl-5">
+                            <h5>Quantity</h5>
+                            <div class="col-xl-12 m-0 p-0">
+                                <h4 id="towerQuantity" class="text-center mt-4">1</h4>
+                                <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <h5>Location</h5>
+                            <textarea class="form-control" id="locItem" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Co-Location Selected -->
+            <div id="enColocation" class="row justify-content-center hide">
+                <div class="col-xl-6">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <h5>Quantity</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="halfRack" name="qtyColo" class="custom-control-input">
+                                <label class="custom-control-label" for="halfRack">1/2 Rack</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="oneRack" name="qtyColo" class="custom-control-input">
+                                <label class="custom-control-label" for="oneRack">1 Rack</label>
+                            </div>
+                            <div class="custom-control custom-radio mt-2">
+                                <input type="radio" id="dozenRack" name="qtyColo" class="custom-control-input">
+                                <label class="custom-control-label" for="dozenRack">12 Rack</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <h5>Power</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="fixedPow" name="powColo" class="custom-control-input">
+                                <label class="custom-control-label" for="fixedPow">Fixed</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="kwhPow" name="powColo" class="custom-control-input">
+                                <label class="custom-control-label" for="kwhPow">kWh Accounting</label>
+                            </div>
+                            <div class="custom-control custom-radio mt-2">
+                                <input type="radio" id="flatPow" name="powColo" class="custom-control-input">
+                                <label class="custom-control-label" for="flatPow">16A Flatrate</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <h5>Bandwith</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="hundredMbit" name="bandColo" class="custom-control-input">
+                                <label class="custom-control-label" for="hundredMbit">100Mbit/s port</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="indvBw" name="bandColo" class="custom-control-input">
+                                <label class="custom-control-label" for="indvBw">Individual Bandwidth</label>
+                            </div>
+                        </div>
+                        <!-- Datepicker -->
+                        <div class="col-xl-4 mt-3">
+                            <h5 class="mt-2">Start Date</h5>
+                            <input id="datepickerCol" width="271" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                </div>
+            </div>
+
+            <!-- Shelter Selected -->
+            <div id="enShelter" class=" row justify-content-center hide">
+                <div class=" col-xl-4">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <!-- Radio button tower size -->
+                            <h5>Shelter Capacity</h5>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerSmall" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerSmall">Small</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerMedium" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerMedium">Medium</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="towerLarge" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="towerLarge">Large</label>
+                            </div>
+
+                            <!-- Datepicker -->
+                            <h5 class="mt-4">Start Date</h5>
+                            <input id="datepickerShel" width="271" />
+                        </div>
+                        <!-- Quantity -->
+                        <div class="col-xl-5">
+                            <h5>Quantity</h5>
+                            <div class="col-xl-12 m-0 p-0">
+                                <h4 id="towerQuantity" class="text-center mt-4">1</h4>
+                                <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="col-xl-12">
+                        <div class="form-group">
+                            <h5>Location</h5>
+                            <textarea class="form-control" id="locItem" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Lab Selected -->
+            <div id="enLab" class="row justify-content-center hide">
+                <div class="col-xl-6">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <h5>Lab Capacity</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="tenPpl" name="capLab" class="custom-control-input">
+                                <label class="custom-control-label" for="tenPpl">10 - 20 People</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="thirtyPpl" name="capLab" class="custom-control-input">
+                                <label class="custom-control-label" for="thirtyPpl">30 - 40 People</label>
+                            </div>
+                            <div class="custom-control custom-radio mt-2">
+                                <input type="radio" id="fiftyPpl" name="capLab" class="custom-control-input">
+                                <label class="custom-control-label" for="fiftyPpl">50 - 70 People</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <h5>Facilites Tier</h5>
+                            <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="tier1" name="tierLab" class="custom-control-input">
+                                <label class="custom-control-label" for="tier1">Tier 1</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="tier2" name="tierLab" class="custom-control-input">
+                                <label class="custom-control-label" for="tier2">Tier 2</label>
+                            </div>
+                            <div class="custom-control custom-radio mt-2">
+                                <input type="radio" id="tier3" name="tierLab" class="custom-control-input">
+                                <label class="custom-control-label" for="tier3">Tier 3</label>
+                            </div>
+                        </div>
+                        <!-- Datepicker -->
+                        <div class="col-xl-12 mt-4">
+                            <h5 class="mt-2">Start Date</h5>
+                            <input id="datepickerLab" width="271" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                </div>
+            </div>
+        </div>
+        <!-- End Product services -->
+
+        <!-- Maintenance Services -->
+        <div id="mainServices" class="hide">
+            <!-- Telecom Selected -->
+            <div id="mainTelcom" class=" row justify-content-center hide">
+                <div class=" col-xl-9">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <!-- Radio button tower size -->
+                            <h5>Items</h5>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">AC</label>
+                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" value="0">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Catu Daya</label>
+                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" value="0">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Baterai</label>
+                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" value="0">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Komputer</label>
+                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" value="0">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Serat Optic</label>
+                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" value="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainBuilding" class=" row justify-content-center hide">
+                <div class=" col-xl-9">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <!-- Radio button tower size -->
+                            <h5>Maintenance</h5>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="repaint">
+                                <label class="custom-control-label" for="repaint">Repaint</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="repair">
+                                <label class="custom-control-label" for="repair">Repair</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="restore">
+                                <label class="custom-control-label" for="restore">Restoration</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Maintenance services -->
+
+        <!-- Unique Services -->
+        <div id="uniqueServices" class="hide">
+                <!-- Telecom Selected -->
+                <div id="uniqueScada" class=" row justify-content-center hide">
+                    <div class=" col-xl-9">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <!-- Radio button tower size -->
+                                <h5>Items</h5>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">AC</label>
+                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Catu Daya</label>
+                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Baterai</label>
+                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Komputer</label>
+                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="0">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Serat Optic</label>
+                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="uniqueGPA" class=" row justify-content-center hide">
+                    <div class=" col-xl-9">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <!-- Radio button tower size -->
+                                <h5>Maintenance</h5>
+    
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="repaint">
+                                    <label class="custom-control-label" for="repaint">Repaint</label>
+                                </div>
+    
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="repair">
+                                    <label class="custom-control-label" for="repair">Repair</label>
+                                </div>
+    
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="restore">
+                                    <label class="custom-control-label" for="restore">Restoration</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+    </div>
+    <!-- End Unique services -->
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-3">
+                <p class="numbering"><span>4</span>Customer Information</p>
+            </div>
+            <div class="col-xl-3">
+            </div>
+            <div class="col-xl-3"></div>
+        </div>
+        <div id="custInfo">
+            <div class="row justify-content-center ">
+                <div class="col-xl-4 mb-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Panji Bagaskara">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="text" class="form-control" id="phoneNumber" placeholder="0877757349234">
+                        </div>
+                        <div class="form-group">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" class="form-control" id="companyName" placeholder="PT.ONS ">
+                        </div>
+                        <div class="form-group">
+                            <label for="companyAddr">Company Address</label>
+                            <input type="text" class="form-control" id="companyAddr" placeholder="JL.Sebrangkota No.21">
+                        </div>
+                        <div class="form-row mt-5 mb-5justify-content-end">
+                            <div class="col text-right">
+                                <button id="cancelOrder">Cancel Order</button>
+                            </div>
+                            <div class="col text-right">
+                                <button id="placeOrder">Place Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-5 mb-5 mt-5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="js/services.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+
+        $('#datepickerCol').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+
+        $('#datepickerShel').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+
+        $('#datepickerLab').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+    </script>
+</body>
+
+</html>
