@@ -8,14 +8,13 @@ ul > li > a{
 
 ul > li > a:hover{
     color:  rgba(0,0,0,.8);
-    border-bottom: 3px solid #2242EB;
+    border-bottom: 3px solid 
 }
 
 #map {
     height: 400px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
    }
-
 
 .hide{
     display: none;
@@ -64,5 +63,32 @@ font-weight: 500;
 
 
 #cancelOrder, #placeOrder{
-    padding: .5em 2em .5em 2em;
+    border-radius: 2px;
+    padding: .5em 3em .5em 3em;
 }
+
+#placeOrder{
+    border: 1px solid #2242EB;
+    color : white;
+    background-color: #2242EB;
+    box-shadow: 0px 8px 15px rgba(5, 44, 248, 0.4);
+    transition: box-shadow 200ms ease-in-out;
+}
+
+#placeOrder:hover{
+    box-shadow: 0px 8px 15px rgba(5, 44, 248, 0.2);
+}
+
+#cancelOrder{
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: white;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+#cancelOrder:hover{
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
