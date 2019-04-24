@@ -61,8 +61,32 @@ function chooseUnique(){
 function engProduct(){
     $("select#selectEngineering").change(function(){
         var engpro = $(this).children("option:selected").val();
+        if(engpro === "tower"){
+            $('#enTower').removeClass('hide');
+            $('#enColocation').addClass('hide');
+            $('#enShelter').addClass('hide');
+            $('#enLab').addClass('hide');
+        }
+        
         if(engpro === "colocation"){
-            
+            $('#enTower').addClass('hide');
+            $('#enColocation').removeClass('hide');
+            $('#enShelter').addClass('hide');
+            $('#enLab').addClass('hide');            
+        }
+
+        if(engpro === "shelter"){
+            $('#enTower').addClass('hide');
+            $('#enColocation').addClass('hide');
+            $('#enShelter').removeClass('hide');
+            $('#enLab').addClass('hide');            
+        }
+
+        if(engpro === "lab"){
+            $('#enTower').addClass('hide');
+            $('#enColocation').addClass('hide');
+            $('#enShelter').addClass('hide');
+            $('#enLab').removeClass('hide');            
         }
     });
 
