@@ -13,5 +13,10 @@ class Service extends CI_Controller{
     public function data_service(){
         $data = $this->input->post(null,True);
         $insert = $this->Service_M->service($data);
+        if($insert){
+            redirect('Landing/index');
+        }else{
+            echo "<script>alert('Gagal Daftar');</script>";
+        }
     }
 }
