@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'hercules.hideserver.net',
-	'username' => 'sidelear_sisfo_08',
-	'password' => 'sidelear_sisfo_08',
-	'database' => 'sidelear_sisfo_08',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'Pemesanan_Jasa',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

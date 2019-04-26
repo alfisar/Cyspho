@@ -109,6 +109,7 @@
             <div class="col-xl-3 text-center">
             </div>
         </div>
+        <input id="jenis" type="hidden" name="jenis" value="enginer">
     </div>
 
     <!-- Maintenance Selection -->
@@ -192,21 +193,21 @@
                             <div class="form-group">
                                 <select name = 'color' id="colorTower" class="mb-3 custom-select">
                                     <option value="red" selected>Red</option>
-                                    <option value="Tower">Grey</option>
-                                    <option value="2">Black</option>
-                                    <option value="3">Camo</option>
+                                    <option value="Grey">Grey</option>
+                                    <option value="balck">Black</option>
+                                    <option value="Camo">Camo</option>
                                 </select>
                             </div>
                             <!-- Datepicker -->
                             <h5 class="mt-2">Start Date</h5>
-                            <input name = 'tanggal' id="datepicker" width="271" />
+                            <input name = 'tanggalTow' id="datepicker" width="271" />
                         </div>
                         <!-- Quantity -->
                         <div class="col-xl-5">
                             <h5>Quantity</h5>
                             <div class="col-xl-12 m-0 p-0">
                                 <h4 id="towerQuantity" class="text-center mt-4">1</h4>
-                                <input name = 'quan' type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                                <input name = 'quanTow' type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
                             </div>
                         </div>
                     </div>
@@ -215,7 +216,7 @@
                     <div class="col-xl-12">
                         <div class="form-group">
                             <h5>Location</h5>
-                            <textarea class="form-control" id="locItem" rows="4"></textarea>
+                            <textarea class="form-control" id="locItem" rows="4" name = "locationTow"></textarea>
                         </div>
                     </div>
                 </div>
@@ -228,48 +229,48 @@
                         <div class="col-xl-4">
                             <h5>Quantity</h5>
                             <div class="custom-control custom-radio mb-2">
-                                <input type="radio" id="halfRack" name="qtyColo" class="custom-control-input">
+                                <input type="radio" id="halfRack" name="qtyColo" class="custom-control-input" value = '1/2 Rack'>
                                 <label class="custom-control-label" for="halfRack">1/2 Rack</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="oneRack" name="qtyColo" class="custom-control-input">
+                                <input type="radio" id="oneRack" name="qtyColo" class="custom-control-input" value = '1 Rack'>
                                 <label class="custom-control-label" for="oneRack">1 Rack</label>
                             </div>
                             <div class="custom-control custom-radio mt-2">
-                                <input type="radio" id="dozenRack" name="qtyColo" class="custom-control-input">
+                                <input type="radio" id="dozenRack" name="qtyColo" class="custom-control-input" value = '12 Rack'>
                                 <label class="custom-control-label" for="dozenRack">12 Rack</label>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <h5>Power</h5>
                             <div class="custom-control custom-radio mb-2">
-                                <input type="radio" id="fixedPow" name="powColo" class="custom-control-input">
+                                <input type="radio" id="fixedPow" name="powColo" class="custom-control-input" value = 'Fixed'>
                                 <label class="custom-control-label" for="fixedPow">Fixed</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="kwhPow" name="powColo" class="custom-control-input">
+                                <input type="radio" id="kwhPow" name="powColo" class="custom-control-input" value = 'kWh Accounting'>
                                 <label class="custom-control-label" for="kwhPow">kWh Accounting</label>
                             </div>
                             <div class="custom-control custom-radio mt-2">
-                                <input type="radio" id="flatPow" name="powColo" class="custom-control-input">
+                                <input type="radio" id="flatPow" name="powColo" class="custom-control-input" value = '16A Flatrate'>
                                 <label class="custom-control-label" for="flatPow">16A Flatrate</label>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <h5>Bandwith</h5>
                             <div class="custom-control custom-radio mb-2">
-                                <input type="radio" id="hundredMbit" name="bandColo" class="custom-control-input">
+                                <input type="radio" id="hundredMbit" name="bandColo" class="custom-control-input" value ='100Mbit/s Port'>
                                 <label class="custom-control-label" for="hundredMbit">100Mbit/s port</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="indvBw" name="bandColo" class="custom-control-input">
+                                <input type="radio" id="indvBw" name="bandColo" class="custom-control-input" value = 'Individual Bandwith'>
                                 <label class="custom-control-label" for="indvBw">Individual Bandwidth</label>
                             </div>
                         </div>
                         <!-- Datepicker -->
                         <div class="col-xl-4 mt-3">
                             <h5 class="mt-2">Start Date</h5>
-                            <input id="datepickerCol" width="271" />
+                            <input name = 'tanggalCol' id="datepickerCol" width="271" />
                         </div>
                     </div>
                 </div>
@@ -285,28 +286,28 @@
                             <!-- Radio button tower size -->
                             <h5>Shelter Capacity</h5>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="towerSmall" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="towerSmall">Small</label>
+                                <input type="radio" id="shelterSmall" name="pickshelter" class="custom-control-input" value = 'Small'>
+                                <label class="custom-control-label" for="shelterSmall">Small</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="towerMedium" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="towerMedium">Medium</label>
+                                <input type="radio" id="shelterMedium" name="pickshelter" class="custom-control-input" value = 'Medium'>
+                                <label class="custom-control-label" for="shelterMedium">Medium</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="towerLarge" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="towerLarge">Large</label>
+                                <input type="radio" id="shelterLarge" name="pickshelter" class="custom-control-input" value = 'Large'>
+                                <label class="custom-control-label" for="shelterLarge">Large</label>
                             </div>
 
                             <!-- Datepicker -->
                             <h5 class="mt-4">Start Date</h5>
-                            <input id="datepickerShel" width="271" />
+                            <input name = 'tanggalShel' id="datepickerShel" width="271" />
                         </div>
                         <!-- Quantity -->
                         <div class="col-xl-5">
                             <h5>Quantity</h5>
                             <div class="col-xl-12 m-0 p-0">
                                 <h4 id="towerQuantity" class="text-center mt-4">1</h4>
-                                <input type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
+                                <input name = 'quanShel' type="range" value="1" class="custom-range" min="1" max="9" id="towerQty">
                             </div>
                         </div>
                     </div>
@@ -315,7 +316,7 @@
                     <div class="col-xl-12">
                         <div class="form-group">
                             <h5>Location</h5>
-                            <textarea class="form-control" id="locItem" rows="4"></textarea>
+                            <textarea class="form-control" id="locItem" rows="4" name = 'locationShel'></textarea>
                         </div>
                     </div>
                 </div>
@@ -328,37 +329,37 @@
                         <div class="col-xl-4">
                             <h5>Lab Capacity</h5>
                             <div class="custom-control custom-radio mb-2">
-                                <input type="radio" id="tenPpl" name="capLab" class="custom-control-input">
+                                <input type="radio" id="tenPpl" name="capLab" class="custom-control-input" value = '10 - 20 People'>
                                 <label class="custom-control-label" for="tenPpl">10 - 20 People</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="thirtyPpl" name="capLab" class="custom-control-input">
+                                <input type="radio" id="thirtyPpl" name="capLab" class="custom-control-input" value = '30 - 40 People'>
                                 <label class="custom-control-label" for="thirtyPpl">30 - 40 People</label>
                             </div>
                             <div class="custom-control custom-radio mt-2">
-                                <input type="radio" id="fiftyPpl" name="capLab" class="custom-control-input">
+                                <input type="radio" id="fiftyPpl" name="capLab" class="custom-control-input" value = '50 - 70 People'>
                                 <label class="custom-control-label" for="fiftyPpl">50 - 70 People</label>
                             </div>
                         </div>
                         <div class="col-xl-4">
                             <h5>Facilites Tier</h5>
                             <div class="custom-control custom-radio mb-2">
-                                <input type="radio" id="tier1" name="tierLab" class="custom-control-input">
+                                <input type="radio" id="tier1" name="tierLab" class="custom-control-input" value = 'Tier 1'>
                                 <label class="custom-control-label" for="tier1">Tier 1</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input type="radio" id="tier2" name="tierLab" class="custom-control-input">
+                                <input type="radio" id="tier2" name="tierLab" class="custom-control-input" value = 'Tier 2'>
                                 <label class="custom-control-label" for="tier2">Tier 2</label>
                             </div>
                             <div class="custom-control custom-radio mt-2">
-                                <input type="radio" id="tier3" name="tierLab" class="custom-control-input">
+                                <input type="radio" id="tier3" name="tierLab" class="custom-control-input" value = 'Tier 3'>
                                 <label class="custom-control-label" for="tier3">Tier 3</label>
                             </div>
                         </div>
                         <!-- Datepicker -->
                         <div class="col-xl-12 mt-4">
                             <h5 class="mt-2">Start Date</h5>
-                            <input id="datepickerLab" width="271" />
+                            <input name = 'tanggalLab'id="datepickerLab" width="271" />
                         </div>
                     </div>
                 </div>
@@ -381,35 +382,35 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">AC</label>
-                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                        <input name = 'AC_main'type="number" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="emailHelp" value="0">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Catu Daya</label>
-                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                        <input name = 'catu_main'type="number" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="emailHelp" value="0">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Baterai</label>
-                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                        <input name = 'baterai_main'type="number" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="emailHelp" value="0">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Komputer</label>
-                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                        <input name = 'komputer_main'type="number" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="emailHelp" value="0">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Serat Optic</label>
-                                        <input type="number" class="form-control" id="exampleInputEmail1"
+                                        <input name = 'serat_main'type="number" class="form-control" id="exampleInputEmail1"
                                             aria-describedby="emailHelp" value="0">
                                     </div>
                                 </div>
@@ -427,17 +428,20 @@
                             <h5>Maintenance</h5>
 
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="repaint">
+                                <input type="hidden" name = 'main_paint' value = 'no'>
+                                <input type="checkbox" class="custom-control-input" id="repaint" name = 'main_paint' value = 'yes'>
                                 <label class="custom-control-label" for="repaint">Repaint</label>
                             </div>
 
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="repair">
+                                <input type="hidden" name = 'main_repair' value = 'no'>
+                                <input type="checkbox" class="custom-control-input" id="repair" name = 'main_repair' value = 'yes'>
                                 <label class="custom-control-label" for="repair">Repair</label>
                             </div>
 
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="restore">
+                                <input type="hidden" name = 'main_res' value = 'no'>
+                                <input type="checkbox" class="custom-control-input" id="restore" name = 'main_res' value = 'yes'>
                                 <label class="custom-control-label" for="restore">Restoration</label>
                             </div>
                         </div>
@@ -460,35 +464,35 @@
                                     <div class="col">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">AC</label>
-                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                            <input name = 'ac_unik'type="number" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" value="0">
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Catu Daya</label>
-                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                            <input name = 'catu_unik' type="number" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" value="0">
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Baterai</label>
-                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                            <input name = 'baterai_unik' type="number" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" value="0">
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Komputer</label>
-                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                            <input name = 'komputer_unik' type="number" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" value="0">
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Serat Optic</label>
-                                            <input type="number" class="form-control" id="exampleInputEmail1"
+                                            <input name = 'serat_unik' type="number" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" value="0">
                                         </div>
                                     </div>
@@ -506,17 +510,20 @@
                                 <h5>Maintenance</h5>
     
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="repaint">
+                                    <input type="hidden" name = 'unik_paint' value = 'no'>
+                                    <input type="checkbox" class="custom-control-input" id="repaint" name = 'unik_paint' value = 'yes'>
                                     <label class="custom-control-label" for="repaint">Repaint</label>
                                 </div>
     
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="repair">
+                                    <input type="hidden" name = 'unik_repair' value = 'no'>
+                                    <input type="checkbox" class="custom-control-input" id="repair" name = 'unik_repair' value = 'yes'>
                                     <label class="custom-control-label" for="repair">Repair</label>
                                 </div>
     
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="restore">
+                                    <input type="hidden" name = 'unik_res' value = 'no'>
+                                    <input type="checkbox" class="custom-control-input" id="restore" name = 'unik_res' value = 'yes'>
                                     <label class="custom-control-label" for="restore">Restoration</label>
                                 </div>
                             </div>
