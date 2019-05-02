@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="<? echo base_url()?>assets/css/history.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/history.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="<? echo base_url()?>assets/css/style.css">
-    <link rel="stylesheet" href="<? echo base_url()?>assets/css/slidinglink.css">
-    <link rel="stylesheet" href="<? echo base_url()?>assets/css/fullpage.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/slidinglink.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/fullpage.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script>
@@ -25,7 +25,7 @@
     <header>
         <div class="row">
             <nav class="navbar fixed-top">
-                <a href="#" class="navbar-brand on-light">
+                <a href="<?echo site_url('Landing/index')?>" class="navbar-brand on-light">
                     Sudatama
                 </a>
                 <ul class="nav justify-content-end">
@@ -52,27 +52,26 @@
                     <tr>
                         <th>ID Order</th>
                         <th>Service Type</th>
-                        <th>Technician Name</th>
-                        <th>Contact</th>
+                        <!-- <th>Technician Name</th>
+                        <th>Contact</th> -->
                         <th>Date</th>
                         <th>Status</th>
-                        <th>Action</th>
+                        <!-- <th>Action</th> -->
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="align-middle">#KMZWAY</td>
-                        <td class="align-middle">Engineering</td>
-                        <td class="align-middle">ONSGanji</td>
-                        <td class="align-middle">082124230976</td>
-                        <td class="align-middle">31/02/2020</td>
-                        <td class="align-middle">Accepted</td>
-                        <td class="align-middle">
-                            <form action="#" method="post">
-                                <button type="submit" class="btn btn-secondary">Cancel</button>
-                            </form>
-                        </td>
-                    </tr>
+                <?php
+                foreach($datas as $data){
+                         ?>
+                        <tr>
+                            <td class="align-middle"><?php echo $data['id']; ?></td>
+                            <td class="align-middle"><?php echo $data['type']; ?></td>
+                            <td class="align-middle"><?php echo $data['date'];?></td>
+                            <td class="align-middle">Pending</td>
+                        </tr>
+                         <?php
+                }
+                ?>
                 </tbody>
             </table>
         </div>

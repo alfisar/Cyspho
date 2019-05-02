@@ -113,6 +113,8 @@
             $result = $res2[0]['id'];
 
             $param2 = array(
+                'id_Cust' => $this->session->userdata('id'),
+                'company' => $data['company'],
                 $temp => $result
             );
             $insert2 = $this->db->insert('Pemesanan_Jasa', $param2);

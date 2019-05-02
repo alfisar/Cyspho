@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="<? echo base_url()?>assets/css/services.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/services.css">
 
     <title>Services</title>
 </head>
@@ -19,7 +19,7 @@
     <!-- Navbar -->
     <div class="row">
         <nav class="navbar fixed-top navbar-light">
-            <a href="#" class=" ml-5 navbar-brand on-light">
+            <a href="<? echo site_url('landing/index');?>" class=" ml-5 navbar-brand on-light">
                 Sudatama
             </a>
             <ul class="nav justify-content-end mr-5">
@@ -30,7 +30,7 @@
                     <a href="#" class="nav-link on-light">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link on-light">History</a>
+                    <a href="<? echo site_url('History/index')?>" class="nav-link on-light">History</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link on-light">Account</a>
@@ -511,19 +511,19 @@
     
                                 <div class="custom-control custom-checkbox">
                                     <input type="hidden" name = 'unik_paint' value = 'no'>
-                                    <input type="checkbox" class="custom-control-input" id="repaint" name = 'unik_paint' value = 'yes'>
+                                    <input type="checkbox" class="custom-control-input" id="unik_paint" name = 'unik_paint' value = 'yes'>
                                     <label class="custom-control-label" for="repaint">Repaint</label>
                                 </div>
     
                                 <div class="custom-control custom-checkbox">
                                     <input type="hidden" name = 'unik_repair' value = 'no'>
-                                    <input type="checkbox" class="custom-control-input" id="repair" name = 'unik_repair' value = 'yes'>
+                                    <input type="checkbox" class="custom-control-input" id="unik_repair" name = 'unik_repair' value = 'yes'>
                                     <label class="custom-control-label" for="repair">Repair</label>
                                 </div>
     
                                 <div class="custom-control custom-checkbox">
                                     <input type="hidden" name = 'unik_res' value = 'no'>
-                                    <input type="checkbox" class="custom-control-input" id="restore" name = 'unik_res' value = 'yes'>
+                                    <input type="checkbox" class="custom-control-input" id="unik_res" name = 'unik_res' value = 'yes'>
                                     <label class="custom-control-label" for="restore">Restoration</label>
                                 </div>
                             </div>
@@ -552,20 +552,21 @@
                     <form>
                         <div class="form-group">
                             <label for="fullName">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Panji Bagaskara">
+                            
+                            <input type="text" class="form-control" id="fullName" placeholder="Panji Bagaskara" name = 'nama' value =  '<? echo $customer->namaCust?>'>
                         </div>
                         <div class="form-group">
                             <label for="phoneNumber">Phone Number</label>
-                            <input type="text" class="form-control" id="phoneNumber" placeholder="0877757349234">
+                            <input type="text" class="form-control" id="phoneNumber" placeholder="0877757349234" name ='telp' value = '<? echo $customer->notelpCust?>'>
                         </div>
                         <div class="form-group">
                             <label for="companyName">Company Name</label>
-                            <input type="text" class="form-control" id="companyName" placeholder="PT.ONS ">
+                            <input type="text" class="form-control" id="companyName" placeholder="PT.ONS " name = 'company'>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="companyAddr">Company Address</label>
                             <input type="text" class="form-control" id="companyAddr" placeholder="JL.Sebrangkota No.21">
-                        </div>
+                        </div> -->
                         <div class="form-row mt-5 mb-5justify-content-end">
                             <div class="col text-right">
                                 <button id="cancelOrder">Cancel Order</button>

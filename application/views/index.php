@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?echo base_url()?>assets/css/style.css">
-    <link rel="stylesheet" href="<?echo base_url()?>assets/css/slidinglink.css">
-    <link rel="stylesheet" href="<?echo base_url()?>assets/css/fullpage.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/slidinglink.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>assets/css/fullpage.css">
     <title>Services - Sudatama</title>
 </head>
 
@@ -26,7 +26,7 @@
                     <a href="#" class="nav-link on-light">Product</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link on-light">Services</a>
+                    <a href="<?php echo site_url('Service/index'); ?>" class="nav-link on-light">Services</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link on-light">About</a>
@@ -71,9 +71,9 @@
                         <li><a href="#" >Telecommunications & informatics infrastructure development</a></li>
                         <li><a href="#" class="align-top"> SCADA System for Electricity</a></li>
                     </ul> -->
-                            <a id="navToDark" href="<?echo site_url('Service/index')?>" class="link">Telecommunications & informatics infrastructure
+                            <a id="navToDark" href="<?php echo site_url('Service/index')?>" class="link">Telecommunications & informatics infrastructure
                                 development</a>
-                            <a href="<?echo site_url('Service/index')?>" class="align-top link" style="width:auto"> SCADA System for Electricity</a>
+                            <a href="<?php echo site_url('Service/index')?>" class="align-top link" style="width:auto"> SCADA System for Electricity</a>
                         </div>
                     </div>
                 </div>
@@ -98,8 +98,8 @@
                         <li><a href="#" >Telecommunications & informatics infrastructure development</a></li>
                         <li><a href="#" class="align-top"> SCADA System for Electricity</a></li>
                     </ul> -->
-                            <a href="<?echo site_url('Service/index')?>" class="link">Telecommunication Devices & support</a>
-                            <a href="<?echo site_url('Service/index')?>" class="align-top link">Buildings & Infrastructures</a>
+                            <a href="<?php echo site_url('Service/index')?>" class="link">Telecommunication Devices & support</a>
+                            <a href="<?php echo site_url('Service/index')?>" class="align-top link">Buildings & Infrastructures</a>
                         </div>
                     </div>
                 </div>
@@ -145,8 +145,8 @@
     </script>
 
     <!-- Custom javascript -->
-    <script src="<?echo base_url()?>assets/js/script.js"></script>
-    <script type="text/javascript" src="<?echo base_url()?>assets/js/fullpage.js"></script>
+    <script src="<?php echo base_url()?>assets/js/script.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>assets/js/fullpage.js"></script>
     <script type="text/javascript">
         new fullpage('#fullpage', {
             autoScrolling: true
